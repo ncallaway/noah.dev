@@ -8,7 +8,7 @@ This is the WordPress site that powers noah.dev
 1. `docker-compose exec ndwp bin/bootstrap`
 
 ## noah.dev Theme
-Theme files can be found and modified in `wp-content/themes/noah.dev'.
+Theme files can be found and modified in `wp-content/themes/noah.dev`.
 
 ## Local Container
 

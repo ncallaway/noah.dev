@@ -1,0 +1,25 @@
+{
+  "name": "noah.dev",
+  "version": "1.0.0",
+  "description": "Building theme file assets for the noah.dev wordpress site",
+  "scripts": {
+    "build-css": "npx sass assets/css/main.scss wp-content/themes/noah.dev/assets/main.min.css --style compressed",
+    "watch-css": "npx sass assets/css/main.scss wp-content/themes/noah.dev/assets/main.min.css --style compressed --watch",
+    "build-js": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ncallaway/noah.dev.git"
+  },
+  "author": "Noah Callaway",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/ncallaway/noah.dev/issues"
+  },
+  "homepage": "https://github.com/ncallaway/noah.dev#readme",
+  "devDependencies": {
+    "sass": "^1.17.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}

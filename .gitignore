@@ -106,3 +106,6 @@ wp-content/mysql.sql
 *.asf
 *.wmv
 *.avi
+
+# dependencies
+node_modules
