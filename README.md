@@ -10,16 +10,25 @@ This is the WordPress site that powers noah.dev
 ## noah.dev Theme
 Theme files can be found and modified in `wp-content/themes/noah.dev`.
 
-## Deploy
+## Local Container
+
+To ssh into the local container run: `docker-compose exec ndwp /bin/bash`
+
+## Remote
+
+### Deploy
 
 The app deploys with [`punt`](https://bitbucket.com/apsislabs/punt).
 
 1. `gem install punt`
 1. `punt deploy prod`
 
-## Local Container
+### SSH
 
-To ssh into the local container run: `docker-compose exec ndwp /bin/bash`
+`ssh -i ~/.ssh/ncallaway-us-west-2.pem bitnami@noah.dev`
+
+WordPress root: `/opt/bitnami/apps/wordpress/htdocs/`
+Restart apache: `sudo /opt/bitnami/ctlscript.sh restart apache`
 
 ### Cloned from WPEngine Boilerplate
 https://github.com/apsislabs/wpengine-boilerplate
