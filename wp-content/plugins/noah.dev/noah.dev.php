@@ -7,15 +7,5 @@
  * Author URI: https://noah.dev
  */
 
-// function init_projects() {
-//   // create a new taxonomy
-//   register_taxonomy(
-//     'project',
-//     'post',
-//     array(
-//       'label' => __( 'Projects' ),
-//       'rewrite' => array( 'slug' => 'project' )
-//     )
-//   );
-// }
-// add_action( 'init', 'init_projects' );
+include('inc/custom_types.php');
+include('inc/custom_fields.php');
