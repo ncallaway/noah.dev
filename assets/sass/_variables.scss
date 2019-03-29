@@ -1,0 +1,30 @@
+// fonts
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$font-family-monospace:'Source Code Pro', monospace;
+
+// gutters
+$gutter_xs: .25em;
+$gutter_sm: .5em;
+$gutter_md: 1em;
+$gutter_lg: 2em;
+$gutter_xl: 3em;
+
+// colors
+$blue: #007ACC;
+$soft_blue: #9ADDFF;
+$magenta: #B100DE;
+
+$gray-100: #F8F8F8;
+// $gray-200: #ECECEC;
+$gray-300: #E2E2E2;
+
+$gray-500: #6A6A6A;
+
+$gray-600: #3C3C3C;
+$gray-700: #2D2D2D;
+$gray-800:#252526;
+$gray-900: #1E1E1E;
+
+// use
+$primary: $blue;
+$text-color: $gray-100;

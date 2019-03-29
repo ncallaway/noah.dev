@@ -1,0 +1,12 @@
+prod:
+    repo: git
+    mode: scp
+    scp:
+        ssh_key: ~/.ssh/ncallaway-us-west-2.pem
+        user: bitnami
+        host: noah.dev
+        remote_base: /opt/bitnami/apps/wordpress/htdocs/
+    files:
+        wp-content/plugins/carpenter: wp-content/plugins/carpenter
+        wp-content/plugins/noah.dev: wp-content/plugins/noah.dev
+        wp-content/themes/noah.dev: wp-content/themes/noah.dev

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Building theme file assets for the noah.dev wordpress site",
   "scripts": {
-    "build-css": "npx sass assets/css/main.scss wp-content/themes/noah.dev/assets/main.min.css --style compressed",
-    "watch-css": "npx sass assets/css/main.scss wp-content/themes/noah.dev/assets/main.min.css --style compressed --watch",
+    "build-css": "npx node-sass assets/sass/main.scss wp-content/themes/noah.dev/assets/main.min.css",
+    "watch-css": "npm run build-css && npx node-sass -w assets/sass/main.scss wp-content/themes/noah.dev/assets/main.min.css",
     "build-js": "webpack --config webpack.config.js"
   },
   "repository": {
@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/ncallaway/noah.dev#readme",
   "devDependencies": {
-    "sass": "^1.17.3",
+    "bootstrap": "^4.3.1",
+    "node-sass": "^4.11.0",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
   }

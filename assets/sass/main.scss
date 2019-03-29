@@ -1,0 +1,12 @@
+@import "_variables";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@import "components/body.scss",
+        "components/nav.scss",
+        "components/typography.scss";
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Source+Code+Pro');
+
+// body {
+//   background-color: blue !important;
+// }

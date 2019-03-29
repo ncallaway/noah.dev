@@ -1,6 +1,25 @@
+<div class="navbar--title d-flex justify-content-between justify-content-center">
+  <p>noah.dev</p>
+  <p>social icons</p>
+</div>
 <nav class="navbar navbar-default navbar-static-top" id="main-nav" role="navigation">
-  <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
+<?php
+    wp_nav_menu( array(
+        'menu'              => 'primary',
+        'theme_location'    => 'primary',
+        'depth'             => 2,
+        'container'         => 'div',
+        'container_class'   => false,
+        'container_id'      => false,
+        'menu_class'        => 'nav navbar-nav',
+        'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+        'walker'            => new WP_Bootstrap_Navwalker())
+    );
+?>
+</nav>
+
+  <div class="container">
+        Brand and toggle get grouped for better mobile display
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav_primary">
                 <span class="sr-only">Toggle navigation</span>
@@ -14,19 +33,7 @@
         </div>
 
         <div class="collapse navbar-collapse" id="nav_primary">
-          <?php
-              wp_nav_menu( array(
-                  'menu'              => 'primary',
-                  'theme_location'    => 'primary',
-                  'depth'             => 2,
-                  'container'         => 'div',
-                  'container_class'   => false,
-                  'container_id'      => false,
-                  'menu_class'        => 'nav navbar-nav',
-                  'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-                  'walker'            => new WP_Bootstrap_Navwalker())
-              );
-          ?>
+          
         </div>
     </div>
 </nav>
