@@ -1,4 +1,4 @@
-<?
+<?php
 
 class PagebuilderWidgets {
     public static function allWidgets()
