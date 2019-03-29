@@ -10,6 +10,13 @@ This is the WordPress site that powers noah.dev
 ## noah.dev Theme
 Theme files can be found and modified in `wp-content/themes/noah.dev`.
 
+## Deploy
+
+The app deploys with [`punt`](https://bitbucket.com/apsislabs/punt).
+
+1. `gem install punt`
+1. `punt deploy prod`
+
 ## Local Container
 
 To ssh into the local container run: `docker-compose exec ndwp /bin/bash`
