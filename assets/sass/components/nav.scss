@@ -38,7 +38,24 @@
 
 .navbar--title {
   background-color: $blue;
-  height: 25px;
-  p { padding-bottom: 0; }
   padding: 0 $gutter_lg;
+  height: 25px;
+
+  p { margin-bottom: 0; }
+
+  a {
+    margin-right: 1em;
+    text-decoration: none;
+
+    opacity: .8;
+    transition: opacity .15s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+  
+  .social-icons {
+    img { height: 22px; }
+  }
 }

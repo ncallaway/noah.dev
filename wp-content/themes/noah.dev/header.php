@@ -16,9 +16,21 @@
 
     <!-- !START body -->
     <body <?php body_class(); ?>>
-      <div class="navbar--title d-flex justify-content-between justify-content-center">
+      <div class="navbar--title d-flex justify-content-between align-items-center">
         <p>noah.dev</p>
-        <p>social icons</p>
+        <div class="social-cions">
+          <a href="https://github.com/ncallaway" target="_blank">
+            <img src="<?php echo get_template_directory_uri() . '/assets/images/social/github.png'; ?>" height="15px" />
+          </a>
+
+          <a href="https://www.linkedin.com/in/noah-callaway-166137b/" target="_blank" style="margin-right: .5em">
+            <img src="<?php echo get_template_directory_uri() . '/assets/images/social/linkedin.png'; ?>" height="15px" />
+          </a>
+
+          <a href="https://twitter.com/ncallaway" target="_blank">
+            <img src="<?php echo get_template_directory_uri() . '/assets/images/social/twitter.svg'; ?>" height="30px" style="margin-top: -2px" />
+          </a>
+        </div>
       </div>
 
       <!-- !START #wrapper -->

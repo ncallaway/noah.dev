@@ -7094,10 +7094,19 @@ footer p {
 
 .navbar--title {
   background-color: #007ACC;
-  height: 25px;
-  padding: 0 2em; }
+  padding: 0 2em;
+  height: 25px; }
   .navbar--title p {
-    padding-bottom: 0; }
+    margin-bottom: 0; }
+  .navbar--title a {
+    margin-right: 1em;
+    text-decoration: none;
+    opacity: .8;
+    transition: opacity .15s ease-in-out; }
+    .navbar--title a:hover {
+      opacity: 1; }
+  .navbar--title .social-icons img {
+    height: 22px; }
 
 .text-magenta {
   color: #C585C0; }
