@@ -12,6 +12,8 @@ class ThemeBuilder {
 
         add_action( 'wp_enqueue_scripts', array(&$this, 'enqueueScripts') );
         add_action( 'wp_enqueue_scripts', array(&$this, 'enqueueStyles') );
+
+        add_action( 'enqueue_block_editor_assets', array(&$this, 'enqueueStyles') );
     }
 
     /**

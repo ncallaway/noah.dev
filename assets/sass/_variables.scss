@@ -9,10 +9,23 @@ $gutter_md: 1em;
 $gutter_lg: 2em;
 $gutter_xl: 3em;
 
-// colors
+// sizes
+$font-size-base: 1.125rem;
+$font-size-xs: 0.625rem;
+
+$width-xl: 1140px;
+
+// colors (clr)
 $blue: #007ACC;
-$soft_blue: #9ADDFF;
-$magenta: #B100DE;
+$blue-medium: #539BD8;
+$blue-soft: #9ADDFF;
+
+$green-medium: #47CAB0;
+$green-light: #B4CFA7;
+$magenta: #C585C0;
+
+$orange-dark: #CF9176;
+$orange-light: #E3C28A; 
 
 $gray-100: #F8F8F8;
 // $gray-200: #ECECEC;
@@ -25,6 +38,12 @@ $gray-700: #2D2D2D;
 $gray-800:#252526;
 $gray-900: #1E1E1E;
 
-// use
+// color (use)
 $primary: $blue;
 $text-color: $gray-100;
+$text-muted: $gray-500;
+$project-color: $green-medium;
+$class-color: $blue-medium;
+$function-color: $green-light;
+$object-color: $orange-light;
+$prefab-color: $orange-dark;

@@ -1,3 +1,15 @@
 .text-magenta {
   color: $magenta;
 }
+
+.text-project { color: $project-color; }
+.text-class { color: $class-color; font-family: $font-family-monospace; }
+.text-function { color: $function-color; font-family: $font-family-monospace; }
+.text-object { color: $object-color; font-family: $font-family-monospace; }
+.text-prefab { color: $prefab-color; font-family: $font-family-monospace; }
+
+a.text-project:hover {
+  color: darken($project-color, 15%);
+  text-decoration: underline;
+}
+

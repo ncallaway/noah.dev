@@ -16,7 +16,18 @@
 
     <!-- !START body -->
     <body <?php body_class(); ?>>
+      <div class="navbar--title d-flex justify-content-between justify-content-center">
+        <p>noah.dev</p>
+        <p>social icons</p>
+      </div>
+
+      <!-- !START #wrapper -->
+      <div id="wrapper">
         <?= render('components/nav/navbar') ?>
-        <!-- !START #wrapper -->
-        <div id="wrapper">
-          <div class="container" id="content">
+
+        <div class="container">  
+          <div id="content">
+
+      
+      
+        

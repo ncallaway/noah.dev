@@ -1,8 +1,9 @@
+    </div> <!-- !END #content -->
   </div> <!-- !END .container -->
 </div> <!-- !END #wrapper -->
 
 <footer id="main-footer">
-  <div class="container">
+  <!-- <div class="container">
     <div class="row">
       <div class="col-sm-3">
         <h3>
@@ -23,7 +24,8 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+  <p>that's all &copy; <?= date('Y'); ?></p>
 </footer>
 
 <?php wp_footer(); ?>
